@@ -6,4 +6,5 @@ export interface ButtonProps
   extends JSX.HTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   text: string;
+  icon?: JSX.Element;
 }

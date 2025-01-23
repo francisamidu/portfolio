@@ -81,10 +81,10 @@
 /* Optionally, add the font to your global CSS */
 body {
   font-family: "Inter";
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #333; /* Thumb color and track color for Firefox */
 }
-button {
-  font-family: "Inter";
-}
+
 @layer base {
   * {
     @apply border-border;
@@ -92,4 +92,61 @@ button {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bouncing-arrow {
+  animation: bounce 2s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  right: -15em;
+  background-color: #111;
+  z-index: 12;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #333; /* Track color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #888, #555); /* Gradient for the thumb */
+  border-radius: 10px; /* Rounded edges */
+  border: 2px solid #333; /* Adds padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #aaa,
+    #666
+  ); /* Lighter gradient on hover */
 }

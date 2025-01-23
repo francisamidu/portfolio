@@ -1,3 +1,5 @@
+import Expertise from "./components/Expertise";
+import About from "./components/About";
 import Header from "./components/Header";
 
 function App() {
@@ -5,6 +7,8 @@ function App() {
     <>
       <main class="w=full h-full">
         <Header />
+        <Expertise />
+        <About />
       </main>
     </>
   );

@@ -1,5 +1,6 @@
 import { createSignal, For } from "solid-js";
 import AppButton from "./Button";
+import { HiSolidArrowDown as ArrowDown } from "solid-icons/hi";
 
 const Header = () => {
   const [links, _setLinks] = createSignal(["about", "projects", "toolkit"]);
@@ -69,6 +70,7 @@ const Header = () => {
               variant="outline"
             />
           </div>
+          <ArrowDown class="bouncing-arrow text-primary my-5" size={22} />
         </div>
       </header>
     </>
