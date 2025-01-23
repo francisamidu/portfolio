@@ -1,4 +1,5 @@
 import { createSignal, For } from "solid-js";
+import AppButton from "./Button";
 
 const Header = () => {
   const [links, _setLinks] = createSignal(["about", "projects", "toolkit"]);
@@ -34,19 +35,39 @@ const Header = () => {
         </nav>
         <div class="flex flex-col justify-center items-center">
           <img
-            class="rounded-full border-5 border-white w-48 h-auto"
+            class="rounded-full border-5 border-white w-56 h-auto my-10"
             src="/francis.png"
           />
-          <div class="text-2xl text-center text-primary-accent-color font-light my-5">
-            <p class="">I build</p>
-            <div class="flex flex-row items-center justify-between font-bold !text-primary-accent-color my-2">
-              <span>Fast</span>
-              <span class="separator rounded-md mx-2">-</span>
-              <span>Reliable</span>
-              <span class="separator rounded-md mx-2">-</span>
-              <span>Responsive</span>
-            </div>
-            <p>web experiences</p>
+          <div class="text-xl text-center text-primary-accent-color font-light my-2">
+            <p class="">
+              Hello there, If you're looking for a developer who builds
+            </p>
+            <span class="font-bold text-sm bg-slate-200 p-[10px] py-[0px]">
+              Fast
+            </span>
+            ,{" "}
+            <span class="font-bold text-sm bg-slate-200 p-[10px] py-[0px]">
+              Reliable
+            </span>{" "}
+            and{" "}
+            <span class="font-bold text-sm bg-slate-200 p-[10px] py-[0px]">
+              Responsive
+            </span>
+            <p>web experiences you're in the right place</p>
+          </div>
+          <div class="flex flex-row items-center my-4">
+            <AppButton
+              class="mr-1 py-3"
+              text="Let's chat"
+              size="lg"
+              variant="default"
+            />
+            <AppButton
+              class="ml-1 py-4"
+              text="See my work"
+              size="lg"
+              variant="outline"
+            />
           </div>
         </div>
       </header>

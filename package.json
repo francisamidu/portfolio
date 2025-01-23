@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@kobalte/core": "^0.13.7",
-    "@radix-ui/react-slot": "^1.1.1",
+    "@types/node": "^22.10.9",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

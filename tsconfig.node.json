@@ -23,9 +23,6 @@
     // Bundler mode setup for Vite or similar tool
     "moduleResolution": "bundler",
 
-    // Allow importing TypeScript files with extensions
-    "allowImportingTsExtensions": true,
-
     // Enable isolated modules for type-checking with Vite or similar tool
     "isolatedModules": true,
     "composite": true,
