@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsxImportSource": "solid-js", // SolidJS JSX transformation
+    "jsx": "preserve", // Preserve JSX for Solid compiler
+    "noImplicitAny": true,
+    "target": "ESNext", // Use ESNext for modern JavaScript features
+    "module": "ESNext", // Align with Vite's ES module system
+    "moduleResolution": "node", // Node module resolution
+    "strict": true, // Enforce strict type-checking
+    "allowJs": true, // Allow JavaScript files
+    "esModuleInterop": true, // Ensure compatibility with ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports
+    "types": ["vite/client"] // Include Vite's type definitions
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

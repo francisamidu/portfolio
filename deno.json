@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "fontsource-variable/rubik": "npm:fontsource-variable/rubik@^5.1.1"
+  }
+}

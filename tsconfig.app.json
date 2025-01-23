@@ -1,0 +1,47 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    // Set the target to ES2020
+    "target": "ES2020",
+
+    // Enable the use of 'define' for class fields (for SolidJS optimization)
+    "useDefineForClassFields": true,
+
+    // Use ESNext module system (for Vite support)
+    "module": "ESNext",
+
+    // Define libraries to be included for the project
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // Skip library checks for faster compilation
+    "skipLibCheck": true,
+
+    // Bundler mode setup for Vite
+    "moduleResolution": "bundler",
+
+    // Enable isolated modules for type-checking with Vite
+    "isolatedModules": true,
+
+    // Force module detection for .ts/.tsx files
+    "moduleDetection": "force",
+
+    // Use SolidJS's JSX runtime for proper compilation
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+
+    // Enable strict type-checking and linting rules
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src/**/*"]
+}

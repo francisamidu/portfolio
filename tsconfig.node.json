@@ -1,0 +1,44 @@
+{
+  "extends": "./tsconfig.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+    // Set the target to ES2022
+    "target": "ES2022",
+
+    // Define library to be included for the Node.js environment
+    "lib": ["ES2023"],
+
+    // Use ESNext module system (for modern Node.js and bundler compatibility)
+    "module": "ESNext",
+
+    // Skip library checks for faster compilation
+    "skipLibCheck": true,
+
+    // Bundler mode setup for Vite or similar tool
+    "moduleResolution": "bundler",
+
+    // Allow importing TypeScript files with extensions
+    "allowImportingTsExtensions": true,
+
+    // Enable isolated modules for type-checking with Vite or similar tool
+    "isolatedModules": true,
+    "composite": true,
+
+    // Force module detection for .ts/.tsx files
+    "moduleDetection": "force",
+
+    // Enable strict type-checking and linting rules
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["vite.config.ts"]
+}
