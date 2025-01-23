@@ -5,7 +5,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
-      <main class="w=full h-full">
+      <main class="w-full h-full">
         <Header />
         <Expertise />
         <About />

@@ -6,7 +6,7 @@ const Header = () => {
   const [links, _setLinks] = createSignal(["about", "projects", "toolkit"]);
   return (
     <>
-      <header class="min-h-screen w-ful bg-slate-100">
+      <header class="min-h-screen w-full bg-slate-100">
         <nav class="p-3 max-w-screen-lg md:mx-auto">
           <div class="flex flex-row items-center justify-between">
             <a href="/" class="flex flex-row items-center">
