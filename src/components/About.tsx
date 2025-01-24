@@ -9,7 +9,7 @@ import {
 const About: Component<{}> = () => {
   return (
     <section id="about" class="p-10">
-      <div class="flex flex-col md:flex-row justify-start bg-slate-00 text-primary ">
+      <div class="flex flex-col md:flex-row justify-start bg-slate-00 text-primary md:max-w-screen-xl md:mx-auto">
         <div class="md:w-1/2">
           <h1 class="group flex items-center py-3">
             <span class="mr-4 h-px w-8 bg-foreground "></span>
@@ -79,7 +79,7 @@ const About: Component<{}> = () => {
           </ul>
         </div>
         <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <div class="relative">
+          <div class="relative w-full">
             <img
               src={francis}
               alt="Profile"

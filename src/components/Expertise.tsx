@@ -1,11 +1,12 @@
 import { createSignal, For } from "solid-js";
 import htmlLogo from "../assets/html-5.png";
 import cssLogo from "../assets/css-3.png";
+import golfFittingImage from "../assets/golf-fitting.png";
 import javaScriptLogo from "../assets/js.png";
+import medisyncImage from "../assets/medi-sync.png";
 import reactLogo from "../assets/science.png";
 import solidLogo from "../assets/solid.svg";
 import tailwindLogo from "../assets/tailwindcss.svg";
-import medisyncImage from "../assets/medi-sync.png";
 import nodeJsLogo from "../assets/nodejs.png";
 import viteLogo from "../assets/vite.svg";
 import {
@@ -61,6 +62,15 @@ const Expertise = () => {
         "A modern and intuitive Health Terms Dashboard designed to simplify access to healthcare terminologies. Built for healthcare professionals, students, and patients, this platform offers streamlined search, categorization, and educational insights into complex medical terms.",
       githubLink: "https://github.com/francisamidu/health-terms-frontend",
       websiteLink: "https://health-terms.francis.dev",
+    },
+    {
+      name: "Golf Fitting",
+      media: "image",
+      link: golfFittingImage,
+      description:
+        "The Golf Club Fitting Dashboard is designed to streamline the process of scheduling, managing, and analyzing golf club fitting services. It provides a user-friendly interface for customers and administrators to interact seamlessly.",
+      githubLink: "https://github.com/francisamidu/Golf-Club-Fitting",
+      websiteLink: "#",
     },
   ]);
   return (
