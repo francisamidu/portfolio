@@ -1,6 +1,7 @@
 import Expertise from "./components/Expertise";
 import About from "./components/About";
 import Header from "./components/Header";
+import ContactForm from "./components/Contact";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header />
         <Expertise />
         <About />
+        <ContactForm />
       </main>
     </>
   );

@@ -1,9 +1,22 @@
-import { createSignal, For } from "solid-js";
+import { createEffect, createSignal, For, onCleanup } from "solid-js";
 import AppButton from "./Button";
 import { HiSolidArrowDown as ArrowDown } from "solid-icons/hi";
 
 const Header = () => {
   const [links, _setLinks] = createSignal(["about", "projects", "toolkit"]);
+  const [isScrolled, setIsScrolled] = createSignal(false);
+  const handleScroll = () => {
+    const threshold = 200;
+    if (window.scrollY > threshold) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+  createEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    onCleanup(() => window.removeEventListener("scroll", handleScroll));
+  });
   return (
     <>
       <header class="min-h-screen w-full bg-slate-100">
@@ -36,27 +49,27 @@ const Header = () => {
         </nav>
         <div class="flex flex-col justify-center items-center">
           <img
-            class="rounded-full border-5 border-white w-56 h-auto my-10"
+            class="rounded-full border-5 border-white w-56 h-auto my-8"
             src="/francis.png"
           />
           <div class="text-xl text-center text-primary-accent-color font-light my-2">
             <p class="">
-              Hello there, If you're looking for a developer who builds
+              Hello there, you must've heard the rumors that I build
             </p>
-            <span class="font-bold text-sm bg-slate-200 p-[10px] py-[0px]">
+            <span class="font-bold text-sm text-destructive p-[10px] py-[0px]">
               Fast
             </span>
             ,{" "}
-            <span class="font-bold text-sm bg-slate-200 p-[10px] py-[0px]">
+            <span class="font-bold text-sm text-destructive p-[10px] py-[0px]">
               Reliable
             </span>{" "}
             and{" "}
-            <span class="font-bold text-sm bg-slate-200 p-[10px] py-[0px]">
+            <span class="font-bold text-sm text-destructive p-[10px] py-[0px]">
               Responsive
             </span>
-            <p>web experiences you're in the right place</p>
+            <p>web experiences so welcome to my portfolio!</p>
           </div>
-          <div class="flex flex-row items-center my-4">
+          <div class="flex flex-row items-center my-5">
             <AppButton
               class="mr-1 py-3"
               text="Let's chat"
@@ -70,7 +83,10 @@ const Header = () => {
               variant="outline"
             />
           </div>
-          <ArrowDown class="bouncing-arrow text-primary my-5" size={22} />
+          <div class="flex flex-row items-center my-5">
+            <ArrowDown class="bouncing-arrow text-primary mr-3" size={20} />
+            <span>Scroll to explore</span>
+          </div>
         </div>
       </header>
     </>
