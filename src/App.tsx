@@ -8,7 +8,7 @@ import ScrollToTopButton from "./components/ScrollToTop";
 function App() {
   return (
     <>
-      <main class="w-full h-full min-h-screen">
+      <main class="w-full">
         <ScrollToTopButton />
         <Header />
         <Expertise />

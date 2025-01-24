@@ -75,8 +75,8 @@ const Expertise = () => {
   ]);
   return (
     <section class="p-4 bg-slate-200">
-      <div class="flex flex-row items-start justify-between px-2">
-        <div class="flex flex-col w-2/5">
+      <div class="flex flex-col md:flex-row items-start justify-between md:px-2">
+        <div class="flex flex-col md:w-2/5">
           <h1 class="font-semibold text-xl my-3">{` <>Tooling</>`}</h1>
           <div class="grid grid-cols-3 gap-9 p-5">
             <For each={tools()}>
@@ -90,7 +90,7 @@ const Expertise = () => {
           </div>
         </div>
 
-        <div class="flex flex-col w-3/5">
+        <div class="flex flex-col md:w-3/5">
           <h1 class="font-semibold text-xl my-3 flex flex-row">
             <span>Projects</span>
             <LaptopIcon class="ml-2" size="35" />
@@ -98,11 +98,14 @@ const Expertise = () => {
           <div class="flex flex-col">
             <For each={projects()}>
               {(item) => (
-                <div class="flex flex-row p-4">
+                <div class="flex flex-col md:flex-row md:p-4 p-2">
                   {item.media == "video" ? null : (
-                    <img class="h-[155px] w-auto rounded-md" src={item.link} />
+                    <img
+                      class="h-[200px] md:h-[155px] w-auto rounded-md"
+                      src={item.link}
+                    />
                   )}
-                  <div class="flex flex-col  ml-3">
+                  <div class="flex flex-col  mt-6 md:mt-0 md:ml-3">
                     <a
                       href={item.websiteLink}
                       class="text-xl font-semibold leading-4 hover:cursor-pointer flex flex-row items-center"

@@ -83,6 +83,7 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #888 var(--primary);
   overflow-x: hidden;
+  position: relative;
 }
 
 * {

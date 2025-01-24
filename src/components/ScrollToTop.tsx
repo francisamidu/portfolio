@@ -5,7 +5,7 @@ const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = createSignal(false);
 
   const toggleVisibility = () => {
-    setIsVisible(window.scrollY > 300);
+    setIsVisible(window.scrollY > 200);
   };
 
   const scrollToTop = () => {
@@ -25,7 +25,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      class={`fixed top-0 right-1 z-50 bg-destructive text-white p-2 rounded-md shadow-lg transition-all duration-300 transform hover:scale-110 ${
+      class={`fixed bottom-1 right-1 z-50 bg-destructive text-white p-2 rounded-md shadow-lg transition-all duration-300 transform hover:scale-110 ${
         isVisible() ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       aria-label="Scroll to top"

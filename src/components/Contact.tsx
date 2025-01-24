@@ -4,8 +4,8 @@ import AppButton from "./Button";
 const ContactForm: Component = () => {
   return (
     <div class="p-8 bg-gray-100">
-      <div class="flex flex-row justify-center md:max-w-screen-lg md:mx-auto">
-        <div class="w-2/5">
+      <div class="flex flex-col md:flex-row justify-center md:max-w-screen-lg md:mx-auto">
+        <div class="md:w-2/5">
           <h1 class="group flex items-center py-3">
             <span class="mr-4 h-px w-8 bg-foreground"></span>
             <span class="text-xs font-bold uppercase tracking-widest text-foreground">
@@ -19,19 +19,8 @@ const ContactForm: Component = () => {
             If you want to know more about me or my work, or you like good
             things(fast websites), send me a message. I'd love to hear from you.
           </p>
-          <div class="flex space-x-4 mt-4">
-            <a href="#" aria-label="LinkedIn" class="text-green-600 text-2xl">
-              🔗
-            </a>
-            <a href="#" aria-label="Twitter" class="text-green-600 text-2xl">
-              🐦
-            </a>
-            <a href="#" aria-label="GitHub" class="text-green-600 text-2xl">
-              🐙
-            </a>
-          </div>
         </div>
-        <form class="flex flex-col space-y-4 w-3/5 px-10">
+        <form class="flex flex-col space-y-4 md:w-3/5 md:px-10">
           <label
             for="name"
             class="block text-xs font-bold uppercase text-slate-900"
