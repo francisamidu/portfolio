@@ -3,7 +3,7 @@ import AppButton from "./Button";
 
 const ContactForm: Component = () => {
   return (
-    <div class="p-8 bg-gray-100">
+    <div class="p-8 bg-gray-100" id="contact">
       <div class="flex flex-col md:flex-row justify-center md:max-w-screen-lg md:mx-auto">
         <div class="md:w-2/5">
           <h1 class="group flex items-center py-3">

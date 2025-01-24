@@ -1,28 +1,27 @@
-## Usage
+# Francis Amidu's Portfolio
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+Welcome to my portfolio! I'm Francis, a frontend developer specializing in building blazing-fast, ultra-reliable web applications. I leverage modern technologies like SolidJS, TypeScript, Tailwind CSS, and Vite to create seamless user experiences. Speed and user satisfaction are my superpowers.
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Technologies
 
-## Available Scripts
+- **SolidJS**: A declarative JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Vite**: A fast build tool and development server for modern web projects.
 
-In the project directory, you can run:
+## Features
 
-### `npm run dev`
+- **Blazing-Fast Performance**: Optimized for speed and efficiency.
+- **Ultra-Reliable**: Built with best practices to ensure reliability.
+- **Responsive Design**: Adaptable to various screen sizes and devices.
+- **Modern UI/UX**: Clean and intuitive user interfaces.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+## Contact
 
-### `npm run build`
+Feel free to reach out if you have any questions or opportunities:
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+- **Email**: [francisamidu124@gmail.com](mailto:francisamidu124@gmail.com)
+- **LinkedIn**: [linkedin.com/in/francisamidu](https://linkedin.com/in/francis-amidu-frontend-developer)
+- **Twitter**: [@francisamidu](https://x.com/iamfrancisamidu)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
+Thank you for visiting my portfolio!

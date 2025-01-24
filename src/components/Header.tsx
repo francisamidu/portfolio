@@ -4,7 +4,7 @@ import { HiSolidArrowDown as ArrowDown } from "solid-icons/hi";
 import { BiRegularMenu as MenuIcon } from "solid-icons/bi";
 
 const Header = () => {
-  const [links, _setLinks] = createSignal(["about", "projects", "toolkit"]);
+  const [links, _setLinks] = createSignal(["about", "expertise", "contact"]);
   const [isScrolled, setIsScrolled] = createSignal(false);
   const [menuOpen, setMenuOpen] = createSignal(false);
 
@@ -29,7 +29,7 @@ const Header = () => {
           <div class="flex flex-row items-center justify-between">
             <a href="/" class="flex flex-row items-center">
               <img src="/logo-1.png" class="w-10 h-auto" />
-              <span class="md:text-2xl font-semibold ml-2">Francis Amidu</span>
+              <span class="md:text-xl font-semibold ml-2">Francis Amidu</span>
             </a>
             <div class="hidden md:flex flex-row items-center space-x-2">
               <For each={links()}>

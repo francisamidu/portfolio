@@ -74,7 +74,7 @@ const Expertise = () => {
     },
   ]);
   return (
-    <section class="p-4 bg-slate-200">
+    <section class="p-4 bg-slate-200" id="expertise">
       <div class="flex flex-col md:flex-row items-start justify-between md:px-2">
         <div class="flex flex-col md:w-2/5">
           <h1 class="font-semibold text-xl my-3">{` <>Tooling</>`}</h1>
